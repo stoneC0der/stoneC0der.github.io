@@ -1,0 +1,270 @@
+hr {  width: 50%; margin: 50px auto; }
+h2 {
+  text-align: center;
+  font-size: 38px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+textarea
+{
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px 0;
+  
+  -webkit-box-shadow: 0 0 1px rgba(150,150,150,0.50);
+  box-shadow: 0 0 5px rgba(150,150,150,0.50);
+}
+
+label
+{
+  font-size: 18px;
+}
+
+.container
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+/*  z-index: 300;*/
+}
+
+main { 
+  -webkit-box-ordinal-group: 2; 
+  -ms-flex-order: 1; order: 1; 
+ -webkit-box-flex: 1; 
+ -ms-flex: 1; 
+ flex: 1;
+  margin-right: 420px;
+  
+/*  border: 1px solid;*/
+}
+
+footer { 
+  -webkit-box-ordinal-group: 4; 
+  -ms-flex-order: 3; order: 3; 
+  -ms-flex-preferred-size: 100%; 
+  flex-basis: 100%; 
+}
+
+.content
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  
+  width: 100%;
+  padding: 20px;
+  
+}
+
+.content > section, div
+{
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+/* ———————————————— @ Introduction ———————— */
+
+.Introduction
+{
+  width: 100%;
+}
+
+.Introduction__title
+{
+  text-align: center;
+}
+
+.Introduction__txt
+{
+  padding: 10px 40px;
+}
+
+/* ———————————————— @ Services ———————— */
+
+.Services
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Services__card
+{
+  position: relative;
+  -ms-flex-preferred-size: 35%;
+  flex-basis: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Services__card > *
+{
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.Services__card__icon
+{
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.Services__card__title
+{
+  
+}
+
+.Services__card
+{
+  border-radius: 5px;
+  margin: 15px 50px;
+  
+  -webkit-box-shadow: 0 0 1px rgba(100,100,100,1.00);
+  box-shadow: 0 0 5px rgba(100,100,100,1.00);
+  text-align: center;
+  height: 200px;
+}
+
+.Services__card--overlay
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background: rgba(200,200,200,1.00);
+}
+
+.Services__card--overlay:hover,.Services__card:hover { opacity: 1; overflow: auto; }
+
+.Services__card--overlay-txt
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/* ———————————————— @ Projects ———————— */
+
+
+/* ———————————————— @ Testimonies ———————— */
+
+.Testimony
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.Testimony__client
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-preferred-size: 45%;
+  flex-basis: 45%;
+  margin: 5px;
+  -webkit-box-shadow: 0 0 1px rgba(100,100,100,1.00);
+  box-shadow: 0 0 1px rgba(150,150,150,1.00);
+  padding: 30px;
+  border-radius: 100px;
+}
+
+.Testimony__client--featured
+{
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.Testimony__client img 
+{
+  border-radius: 50%;
+  border: 1px solid;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  width: 75px;
+  height: 75px;
+  max-width: 100%;
+}
+
+/* ———————————————— @ Contacts ———————— */
+
+.Contact {}
+
+.Contact__form
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.Contact__form > *
+{
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.Contact__form > input[type="submit"]
+{
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  
+}
+
+
+
+/* —————————————— @ Footer —————————————— */
+.sticky-footer > div
+{
+  padding: 20px;
+  text-align: center;
+  background: rgba(200,200,200, 0.50);
+}

@@ -1,0 +1,122 @@
+aside
+{
+  height: 100%;
+  width: 450px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  right: 0;
+/*  background-color: #111;*/
+  overflow-x: hidden;
+  padding: 30px 30px;
+}
+
+/*TODO: hide the sidebar and make it appears when the main content reaches the top of the window*/
+/*
+aside { 
+  -webkit-box-ordinal-group: 3; 
+  -ms-flex-order: 2; order: 2;
+  -ms-flex-preferred-size: 500px;
+  flex-basis: 500%;
+}*/
+
+.Skills
+{
+/*  padding: 10px;*/
+/*
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+*/
+}
+
+.Skills .Skills__container
+{
+  border: none;
+  -webkit-box-shadow: 0 0 1px rgba(150,150,150,0.50);
+  box-shadow: 0 0 5px rgba(150,150,150,0.50); 
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.Skills .Skills__container > p
+{
+  font-weight: 500;
+  padding: 1px 2px;
+  margin: 0;
+  font-size: 13px;
+}
+
+.Skills__inner-container
+{
+  width: 100%;
+  background: rgba(240,240,240,0.50);
+}
+
+.Skills__genre
+{
+  text-align: right;
+  padding: 8px;
+  line-height: 10px;
+  color: #eee;
+  font-weight: 600;
+}
+
+.Skills__genre.html {width: 90%; background-color: rgba(20,20,20,0.80);}
+.Skills__genre.css {width: 75%; background-color: rgba(20,20,20,0.80);}
+.Skills__genre.js {width: 50%; background-color: rgba(20,20,20,0.80);}
+.Skills__genre.php {width: 65%; background-color: rgba(20,20,20,0.80);}
+.Skills__genre.sql {width: 30%; background-color: rgba(20,20,20,0.80);}
+
+
+/*———————————————— @ Card */
+
+.Card
+{
+/*  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+/*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+  -webkit-box-shadow: 0 0 5px rgba(150,150,150,0.50);
+  box-shadow: 0 0 5px rgba(150,150,150,0.50); 
+  margin: auto;
+  text-align: center;
+/*  padding: 30px;*/
+}
+
+.Card > h2 {font-size: 24px;}
+
+.Card__title
+{
+  color: grey;
+}
+
+.Card .Card__button  
+{
+  outline: 0;
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0;
+  -webkit-box-shadow: 0 0 0 #fff;
+  box-shadow: 0 0 0 #fff;
+}
+
+.Card__profile__links {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.Card__profile__links:hover {
+  opacity: 0.7;
+}
+
+.Card__img { max-width: 100%}
+
+
